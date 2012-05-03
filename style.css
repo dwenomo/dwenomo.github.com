@@ -1,0 +1,11 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+canvas {
+    position: absolute;
+}
+h1 {
+    font-size: 8px;
+display: none;
+}
