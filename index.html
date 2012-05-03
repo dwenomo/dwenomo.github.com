@@ -10,37 +10,44 @@
   </head>
   <body>
     <h1>htmlの練習がしたいだけのページ</h1>
-    <div name="twitter">
-      <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
-      <script>
-	new TWTR.Widget({
-	version: 2,
-	type: 'profile',
-	rpp: 30,
-	interval: 30000,
-	width: 'auto',
-	height: 1000,
-	theme: {
-	shell: {
-	background: '#333333',
-	color: '#ffffff'
-	},
-	tweets: {
-	background: '#000000',
-	color: '#ffffff',
-	links: '#4aed05'
-	}
-	},
-	features: {
-	scrollbar: false,
-	loop: false,
-	live: true,
-	behavior: 'all'
-	}
-	}).render().setUser('dwenomo').start();
-    </script>
-    </div>
-    
+    <table>
+      <tr><td>
+	  <div name="twitter">
+	    <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+	    <script>
+	      new TWTR.Widget({
+	      version: 2,
+	      type: 'profile',
+	      rpp: 30,
+	      interval: 30000,
+	      width: 'auto',
+	      height: 1000,
+	      theme: {
+	      shell: {
+	      background: '#333333',
+	      color: '#ffffff'
+	      },
+	      tweets: {
+	      background: '#000000',
+	      color: '#ffffff',
+	      links: '#4aed05'
+	      }
+	      },
+	      features: {
+	      scrollbar: false,
+	      loop: false,
+	      live: true,
+	      behavior: 'all'
+	      }
+	      }).render().setUser('dwenomo').start();
+	    </script>
+	  </div>
+	</td><td>
+	  <div name="tumblr">
+	    <script type="text/javascript" src="http://dwenomo.tumblr.com/js"></script>
+	  </div>
+      </td></tr>
+    </table>
     <!--
 	<canvas id='c'></canvas>
 	
