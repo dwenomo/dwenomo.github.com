@@ -1,7 +1,52 @@
+<!DOCTYPE html>
 <html>
-<body>
-test a.
-test b.
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>dwenomo page</title>
+    <meta name="Description" content="" />
+    <meta name="Keywords"  content="" />
+    
+    <link rel="stylesheet" type="text/css" media="screen,print" href="style.css" />
+  </head>
+  <body>
+    <h1>htmlの練習がしたいだけのページ</h1>
+    <div name="twitter">
+      <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+      <script>
+	new TWTR.Widget({
+	version: 2,
+	type: 'profile',
+	rpp: 30,
+	interval: 30000,
+	width: 'auto',
+	height: 1000,
+	theme: {
+	shell: {
+	background: '#333333',
+	color: '#ffffff'
+	},
+	tweets: {
+	background: '#000000',
+	color: '#ffffff',
+	links: '#4aed05'
+	}
+	},
+	features: {
+	scrollbar: false,
+	loop: false,
+	live: true,
+	behavior: 'all'
+	}
+	}).render().setUser('dwenomo').start();
+    </script>
+    </div>
+    
+    <!--
+	<canvas id='c'></canvas>
+	
+	<script type="text/javascript" src="http://jsdo.it/akm2/fhMC/js"></script>
+	
+	<script type="text/javascript" src="index.js"></script>
+	-->
+  </body>
 </html>
-
